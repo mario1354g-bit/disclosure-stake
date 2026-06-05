@@ -1,0 +1,24 @@
+{
+  "sampleRate": 44100,
+  "assets": {
+    "music_base": "./assets/audio/music_base.mp3",
+    "music_bonus": "./assets/audio/music_bonus.wav",
+    "music_disclosure": "./assets/audio/music_disclosure.mp3",
+    "bonus_sting": "./assets/audio/bonus_sting.wav",
+    "tile_drop": "./assets/audio/tile_drop.wav",
+    "spin_start": "./assets/audio/spin_start.wav",
+    "reel_stop_1": "./assets/audio/reel_stop_1.wav",
+    "reel_stop_2": "./assets/audio/reel_stop_2.wav",
+    "reel_stop_3": "./assets/audio/reel_stop_3.wav",
+    "wild_expand": "./assets/audio/wild_expand.wav",
+    "payline_trace": "./assets/audio/payline_trace.wav",
+    "symbol_hit": "./assets/audio/symbol_hit.wav",
+    "win_small": "./assets/audio/win_small.wav",
+    "win_big": "./assets/audio/win_big.wav",
+    "button": "./assets/audio/button.wav",
+    "click": "./assets/audio/click.mp3",
+    "coin": "./assets/audio/coin.mp3",
+    "panel_open": "./assets/audio/panel_open.wav",
+    "bonus_trigger": "./assets/audio/bonus_trigger.wav"
+  }
+}

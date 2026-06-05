@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- viewport-fit=cover + the resize logic in Viewport.js handle every
+         phone aspect ratio. No CSS layout system fighting the canvas. -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <title>DISCLOSURE</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #05060a;
+        /* Prevent mobile pull-to-refresh / rubber-banding over the game */
+        overscroll-behavior: none;
+        touch-action: none;
+      }
+      #app {
+        position: fixed;
+        inset: 0;
+      }
+      #app canvas {
+        display: block;
+      }
+      /* Pre-JS fallback: just a dark screen (NO text). The wordmark only appears
+         once the styled LoadingScreen (src/ui/LoadingScreen.js) is ready and fades
+         in over this element — so there's never a flash of the unstyled/ugly
+         system-font "DISCLOSURE" before the proper slashed wordmark. */
+      #boot {
+        position: fixed;
+        inset: 0;
+        z-index: 9998;
+        background:
+          radial-gradient(120% 80% at 50% 38%, #0d1417 0%, #080b0e 55%, #05060a 100%);
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/index-DuPYVgIF.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="boot"></div>
+  </body>
+</html>
